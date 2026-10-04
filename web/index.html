@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NotifyVault — Private Notification Archive</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:#08090d;color:#f5f7ff}
+main{min-height:100vh;display:grid;place-items:center;padding:32px;background:radial-gradient(circle at 20% 10%,#35205f 0,transparent 35%),radial-gradient(circle at 90% 90%,#123e58 0,transparent 35%),#08090d}
+.card{width:min(920px,100%);padding:48px;border:1px solid #292d3a;border-radius:28px;background:rgba(17,19,27,.86);box-shadow:0 30px 90px rgba(0,0,0,.45)}
+.badge{display:inline-block;padding:8px 12px;border:1px solid #3b4050;border-radius:999px;color:#bfc7ff;font-size:13px}
+h1{font-size:clamp(44px,8vw,82px);line-height:.95;margin:22px 0 18px;letter-spacing:-.06em}
+p{color:#aeb5c7;font-size:18px;line-height:1.65;max-width:700px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0}.btn{display:inline-block;text-decoration:none;padding:15px 20px;border-radius:14px;font-weight:700}.primary{background:#fff;color:#090a0e}.secondary{border:1px solid #363b4a;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}.item{padding:20px;border:1px solid #292d3a;border-radius:18px;background:#11131a}.item b{display:block;margin-bottom:8px}.item span{color:#929aaf;font-size:14px;line-height:1.5}
+small{color:#737b8f} @media(max-width:650px){.card{padding:28px}.grid{grid-template-columns:1fr}h1{font-size:52px}}
+</style>
+</head>
+<body><main><section class="card">
+<span class="badge">Android • Privacy-first • Local storage</span>
+<h1>NotifyVault</h1>
+<p>Keep a local snapshot of notifications before they disappear from your notification shade. NotifyVault records what Android delivers to your device and keeps the history available locally.</p>
+<div class="actions">
+<a class="btn primary" href="https://github.com/asakiran2307/Notification-receiver/releases/download/latest/NotifyVault-release.apk">Download APK</a>
+<a class="btn secondary" href="https://github.com/asakiran2307/Notification-receiver">View source</a>
+</div>
+<div class="grid">
+<div class="item"><b>Notification capture</b><span>Uses Android Notification Access with explicit user permission.</span></div>
+<div class="item"><b>Local history</b><span>Notification snapshots are stored on the device by default.</span></div>
+<div class="item"><b>Deleted-from-shade tracking</b><span>Records when an observed notification is later removed.</span></div>
+</div>
+<p><small>Important: NotifyVault cannot recover a message that was deleted before Android delivered its notification. The APK is a test/distribution build signed with the Android debug key.</small></p>
+</section></main></body></html>
